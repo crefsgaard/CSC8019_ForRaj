@@ -2,14 +2,12 @@ This is a repository for Team 13's project.
 
 The team uses Android Studio to develop an app. To get this repository in Android Studio, complete the following steps (if you face problems, just contact Chris):
   1. Install git on your computer. Download it from their official site: https://git-scm.com/downloads
-  2. Open Android Studio
-  3. Go to File -> New -> Project from Version Control, and clone this project using the repository 
-  URL: https://github.com/newcastleuniversity-computing/CSC8019_Team13_2021-22
-  4. Login to your University Github account to authenticate the process. If you use a key to do this, you may have 
-  have to allow the key access to Newcastle University. If this causes issues, just contact me (Chris).
-  5. We work with branches - a Main branch that always has a working version of our code, and DEV branches for 
-  each team member to develop on. When you have cloned the repository, make sure to create a DEV branch named "DEV_yourName" and push that branch to the repository.
-When using Github it is VERY important that you do NOT push to the Main branch before you know that your code works. 
+  2. Follow this guide on how to clone a Github repository to Android Studio: https://stackoverflow.com/questions/39233483/how-to-clone-project-from-the-github-in-android-studio
+  3. We work with branches - a Main branch that always has a working version of our code, and DEV branches for 
+  each team member to develop on. When you have cloned the repository, make sure to create a DEV branch named "DEV_yourName" 
+  and push that branch to the repository.
+
+In general, when using Github it is VERY important that you do NOT push to the Main branch before you know that your code works. 
 Make sure to do all development and testing on your designated DEV branch. Further, make sure that your DEV branch is up to date before 
 pushing to Main - if not, you will overwrite that latest work in the Main branch.
 
