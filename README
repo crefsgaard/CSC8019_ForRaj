@@ -3,14 +3,21 @@ This is a repository for Team 13's project.
 The team uses Android Studio to develop an app. To get this repository in Android Studio, complete the following steps:
   1. Install git on your computer. Download it from their official site: https://git-scm.com/downloads
   2. Open Android Studio
-  3. Go to File -> New -> Project from Version Control, and clone this project using the repository URL: https://github.com/newcastleuniversity-computing/CSC8019_Team13_2021-22
-  4. Login to your University Github account to authenticate the process. If you use a key to do this, you may have have to allow the key access to Newcastle University. If this causes issues, just contact me (Chris)
-  5. We work with branches - a Main branch that always has a working version of our code, and DEV branches for each team member to develop on. When you have cloned the repository, make sure to create a DEV branch named "DEV_yourName" and push that branch to the repository.
+  3. Go to File -> New -> Project from Version Control, and clone this project using the repository 
+  URL: https://github.com/newcastleuniversity-computing/CSC8019_Team13_2021-22
+  4. Login to your University Github account to authenticate the process. If you use a key to do this, you may have 
+  have to allow the key access to Newcastle University. If this causes issues, just contact me (Chris).
+  5. We work with branches - a Main branch that always has a working version of our code, and DEV branches for 
+  each team member to develop on. When you have cloned the repository, make sure to create a DEV branch named "DEV_yourName" and push that branch to the repository.
+
 When using Github it is VERY important that you do NOT push to the Main branch before you know that your code works. Make sure to do all development and testing on your designated DEV branch. Further, make sure that your DEV branch is up to date before pushing to Main - if not, you will overwrite that latest work in the Main branch.
+
 
 We need to make sure that the code looks similar across the project - i.e. the code's appearance should not depend on who coded it. Therefore, please follow the following coding practices:
   1. Naming conventions
     1.1. All classes start with a capital letter
-    1.2. All variables and methods use the camelCase naming convention, i.e. if the name is one word, it starts with lower-case, and if it is multiple words the first word is lower-case, while the following are upper-case. Examples: "Team" is named as "team" while "This team" is names as "thisTeam".
-  2. Make sure to comment your code and use javadocs before each method. An example of javadocs is the piece of text before the 'start' method here: https://www.google.com/search?q=javadocs+example&source=lnms&tbm=isch&sa=X&ved=2ahUKEwin7ffW6sr2AhWPRPEDHauWB_QQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25#imgrc=4eq7TMZQxSVY0M
+    1.2. All variables and methods use the camelCase naming convention, i.e. if the name is one word, it starts with lower-case, 
+    and if it is multiple words the first word is lower-case, while the following are upper-case. Examples: "Team" is named as "team" while "This team" is names as "thisTeam".
+  2. Make sure to comment your code and use javadocs before each method. An example of javadocs is the piece of text before the 'start' 
+  method here: https://www.google.com/search?q=javadocs+example&source=lnms&tbm=isch&sa=X&ved=2ahUKEwin7ffW6sr2AhWPRPEDHauWB_QQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25#imgrc=4eq7TMZQxSVY0M
   3. Make code reusable by putting Strings, Layouts, Colors etc. into their designated folders in Android Studio.
