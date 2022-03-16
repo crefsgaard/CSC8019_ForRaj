@@ -9,9 +9,9 @@ The team uses Android Studio to develop an app. To get this repository in Androi
   have to allow the key access to Newcastle University. If this causes issues, just contact me (Chris).
   5. We work with branches - a Main branch that always has a working version of our code, and DEV branches for 
   each team member to develop on. When you have cloned the repository, make sure to create a DEV branch named "DEV_yourName" and push that branch to the repository.
-
-When using Github it is VERY important that you do NOT push to the Main branch before you know that your code works. Make sure to do all development and testing on your designated DEV branch. Further, make sure that your DEV branch is up to date before pushing to Main - if not, you will overwrite that latest work in the Main branch.
-
+When using Github it is VERY important that you do NOT push to the Main branch before you know that your code works. 
+Make sure to do all development and testing on your designated DEV branch. Further, make sure that your DEV branch is up to date before 
+pushing to Main - if not, you will overwrite that latest work in the Main branch.
 
 We need to make sure that the code looks similar across the project - i.e. the code's appearance should not depend on who coded it. Therefore, please follow the following coding practices:
   1. Naming conventions
