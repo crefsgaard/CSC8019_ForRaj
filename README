@@ -1,6 +1,6 @@
 This is a repository for Team 13's project.
 
-The team uses Android Studio to develop an app. To get this repository in Android Studio, complete the following steps:
+The team uses Android Studio to develop an app. To get this repository in Android Studio, complete the following steps (if you face problems, just contact Chris):
   1. Install git on your computer. Download it from their official site: https://git-scm.com/downloads
   2. Open Android Studio
   3. Go to File -> New -> Project from Version Control, and clone this project using the repository 
