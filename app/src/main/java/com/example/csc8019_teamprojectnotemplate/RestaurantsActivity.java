@@ -9,20 +9,18 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-//Inspiration: https://www.geeksforgeeks.org/how-to-implement-bottom-navigation-with-activities-in-android/
-
-public class MainActivity extends AppCompatActivity {
+public class RestaurantsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_restaurants);
 
         // Initialize and assign variable
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
-        // Set Home selected
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        // Set Restaurants selected
+        bottomNavigationView.setSelectedItemId(R.id.restaurants);
 
         // Perform item selected listener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId())
                 {
                     case R.id.home:
-                        return true;
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
                     case R.id.booking:
                         startActivity(new Intent(getApplicationContext(),BookingActivity.class));
                         overridePendingTransition(0,0);
@@ -42,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.restaurants:
-                        startActivity(new Intent(getApplicationContext(),RestaurantsActivity.class));
-                        overridePendingTransition(0,0);
                         return true;
                     case R.id.attractions:
                         startActivity(new Intent(getApplicationContext(),AttractionsActivity.class));
@@ -53,5 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 }

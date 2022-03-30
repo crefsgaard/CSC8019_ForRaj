@@ -6,23 +6,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-//Inspiration: https://www.geeksforgeeks.org/how-to-implement-bottom-navigation-with-activities-in-android/
-
-public class MainActivity extends AppCompatActivity {
+public class BookingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_booking);
 
+        /**
+         * Create numbers in dropdown menu of number of passengers
+         * Inspiration: https://stackoverflow.com/questions/13377361/how-to-create-a-drop-down-list
+         */
+        //Instantiate spinner
+        Spinner spinnerLanguages=findViewById(R.id.spinner_passengers);
+
+        //Use ArrayAdapter to render items in the noOfPassengers string array when the dropdown menu is accessed
+        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.noOfPassengers, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+
+        //Attach the adapter to our dropdown menu (spinner)
+        spinnerLanguages.setAdapter(adapter);
+
+        /**
+         * Create navigation functionality
+         */
         // Initialize and assign variable
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
-        // Set Home selected
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        // Set Booking selected
+        bottomNavigationView.setSelectedItemId(R.id.booking);
 
         // Perform item selected listener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId())
                 {
                     case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.booking:
-                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
-                        overridePendingTransition(0,0);
                         return true;
                     case R.id.route:
                         startActivity(new Intent(getApplicationContext(),RouteActivity.class));
@@ -53,5 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+
     }
 }

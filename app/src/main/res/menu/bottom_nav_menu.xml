@@ -2,23 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_baseline_home_24"/>
     <item
-        android:id="@+id/bookingFragment"
+        android:id="@+id/booking"
         android:title="Booking"
         android:icon="@drawable/ic_baseline_money_24"/>
     <item
-        android:id="@+id/routeFragment"
+        android:id="@+id/route"
         android:title="Route"
         android:icon="@drawable/ic_baseline_directions_24"/>
     <item
-        android:id="@+id/restaurantsFragment"
+        android:id="@+id/restaurants"
         android:title="Restaurants"
         android:icon="@drawable/ic_baseline_restaurant_menu_24" />
     <item
-        android:id="@+id/attractionsFragment"
+        android:id="@+id/attractions"
         android:title="Attractions"
         android:icon="@drawable/ic_baseline_local_see_24"/>
 

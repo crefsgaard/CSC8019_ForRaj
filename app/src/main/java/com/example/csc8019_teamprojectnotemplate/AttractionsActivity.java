@@ -9,20 +9,18 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-//Inspiration: https://www.geeksforgeeks.org/how-to-implement-bottom-navigation-with-activities-in-android/
-
-public class MainActivity extends AppCompatActivity {
+public class AttractionsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_attractions);
 
         // Initialize and assign variable
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
-        // Set Home selected
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        // Set Attractions selected
+        bottomNavigationView.setSelectedItemId(R.id.attractions);
 
         // Perform item selected listener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId())
                 {
                     case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.booking:
                         startActivity(new Intent(getApplicationContext(),BookingActivity.class));
@@ -46,12 +46,11 @@ public class MainActivity extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.attractions:
-                        startActivity(new Intent(getApplicationContext(),AttractionsActivity.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
             }
         });
+
     }
 }
